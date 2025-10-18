@@ -1,482 +1,1679 @@
 <!DOCTYPE html>
-
-<html dir="rtl" lang="ar">
-<head><script async="True" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6807207458615028"></script>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>آسر وغزل — للدعاية والإعلان وتصميم المواقع</title>
-<meta content="نصمم إعلانات إبداعية، مواقع إلكترونية، ونُدير حملات تسويقية." name="description"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asr & Ghazal - دعاية وإعلان</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* الأساسيات */
         :root {
-            --primary-color: #3a86ff;
-            --secondary-color: #ff006e;
-            --dark-color: #14213d;
-            --light-color: #f8f9fa;
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --transition: all 0.3s ease;
         }
-        body { font-family: 'Cairo', sans-serif; padding-top: 80px; background-color: #f9fafb; }
-        .navbar { background-color: white; box-shadow: 0 2px 15px rgba(0,0,0,0.1); padding: 15px 0; }
-        .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.8rem; }
-        .navbar-brand span { color: var(--secondary-color); }
-        .nav-link { color: var(--dark-color); font-weight: 600; margin: 0 10px; position: relative; }
-        .nav-link:after { content: ''; position: absolute; bottom: 0; right: 0; width: 0; height: 3px; background-color: var(--primary-color); transition: width 0.3s; }
-        .nav-link:hover:after, .nav-link.active:after { width: 100%; }
-        .whatsapp-btn { background-color: #25D366; color: white; padding: 8px 15px; border-radius: 50px; font-weight: bold; display: inline-flex; align-items: center; margin-right: 15px; }
-        .hero-section { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; color: white; padding: 120px 0; text-align: center; }
-        .hero-title { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .hero-subtitle { font-size: 1.5rem; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
-        .btn-primary { background-color: var(--primary-color); border-color: var(--primary-color); padding: 15px 40px; font-weight: bold; font-size: 1.2rem; border-radius: 50px; transition: all 0.3s; }
-        .btn-primary:hover { background-color: var(--secondary-color); border-color: var(--secondary-color); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-        .section-title { position: relative; margin-bottom: 50px; font-weight: 800; text-align: center; color: var(--dark-color); }
-        .section-title:after { content: ''; display: block; width: 100px; height: 5px; background: var(--secondary-color); margin: 20px auto; border-radius: 10px; }
-        .news-ticker { background-color: var(--primary-color); color: white; padding: 12px 0; overflow: hidden; position: relative; }
-        .ticker-content { display: inline-block; white-space: nowrap; padding-left: 100%; animation: ticker 25s linear infinite; }
-        @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
-        .image-scroll { overflow: hidden; white-space: nowrap; padding: 30px 0; background: linear-gradient(to right, #f8f9fa, #e9ecef, #f8f9fa); }
-        .scroll-container { display: inline-block; animation: scroll 35s linear infinite; }
-        .scroll-item { display: inline-block; margin: 0 20px; width: 280px; height: 180px; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .scroll-item:hover { transform: scale(1.05); }
-        .scroll-item img { width: 100%; height: 100%; object-fit: cover; }
-        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .service-card { border: none; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; background: white; }
-        .service-icon { font-size: 3.5rem; color: var(--primary-color); margin-bottom: 25px; transition: color 0.3s; }
-        
-.circle-face {
-    width: 180px;
-    height: 180px;
-    border-radius: 15px; /* بدل 50% خلتها مربعة بزوايا مدورة بسيطة */
-    overflow: hidden;
-    margin: 0 auto 25px;
-    border: 6px solid var(--primary-color);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: transform 0.3s;
-}
-.circle-face img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;      /* يملأ الصورة بالكامل */
-    object-position: center; /* يخلي الوجه/الموضوع في المنتصف */
-}
 
-.portfolio-item { position: relative; overflow: hidden; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
-        .portfolio-item img { width: 100%; transition: transform 0.5s; }
-        .portfolio-item:hover img { transform: scale(1.1); }
-        .portfolio-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(58, 134, 255, 0.85); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; }
-        .portfolio-item:hover .portfolio-overlay { opacity: 1; }
-        .social-buttons { display: flex; justify-content: center; gap: 15px; margin: 30px 0; }
-        .social-btn { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; transition: transform 0.3s, box-shadow 0.3s; }
-        .social-btn:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.2); }
-        .facebook { background-color: #3b5998; }
-        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-        .tiktok { background-color: #000000; }
-        .youtube { background-color: #ff0000; }
-        .snapchat { background-color: #fffc00; color: black; }
-        .linkedin { background-color: #0077b5; }
-        footer { background: linear-gradient(to right, #14213d, #1d2f5d); color: white; padding: 70px 0 25px; }
-        .footer-links a { color: #ddd; text-decoration: none; display: block; margin-bottom: 12px; transition: color 0.3s; }
-        .floating-contact { position: fixed; bottom: 30px; left: 30px; z-index: 1000; }
-        .contact-btn { width: 60px; height: 60px; border-radius: 50%; background-color: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 6px 15px rgba(0,0,0,0.2); transition: all 0.3s; animation: pulse 2s infinite; }
-        .contact-btn:hover { background-color: var(--secondary-color); transform: scale(1.1); }
-        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(58,134,255,0.7); } 70% { box-shadow: 0 0 0 15px rgba(58,134,255,0); } 100% { box-shadow: 0 0 0 0 rgba(58,134,255,0); } }
-        .floating-admin { position: fixed; bottom: 30px; right: 30px; z-index: 1000; }
-        .admin-btn { width: 60px; height: 60px; border-radius: 50%; background-color: var(--dark-color); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 6px 15px rgba(0,0,0,0.2); transition: all 0.3s; }
-        .admin-btn:hover { background-color: var(--secondary-color); transform: scale(1.1); }
-        .admin-panel { padding: 20px; background: white; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
-        .hint { font-size: 0.9rem; color: #666; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* رأس الصفحة */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+            color: white;
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 2.5rem;
+            margin: 0 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: var(--light-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid var(--accent-color);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* قسم الفيديو التلقائي - بدلاً من شريط الصور المتحرك */
+        .video-section {
+            padding: 40px 0;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef, #f8f9fa);
+            border-radius: 15px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            display: block;
+        }
+
+        /* باقي الستايلات */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .lang-btn:hover, .lang-btn.active {
+            background: var(--accent-color);
+        }
+
+        .offers-bar {
+            background: var(--secondary-color);
+            color: white;
+            padding: 10px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .offers-content {
+            display: flex;
+            animation: scroll-rtl 15s linear infinite;
+            white-space: nowrap;
+        }
+
+        .offer-item {
+            padding: 0 30px;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        @keyframes scroll-rtl {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .services {
+            padding: 50px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: var(--secondary-color);
+            margin: 10px auto;
+        }
+
+        .services-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .service-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 20px 15px;
+            min-width: 140px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-btn:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-btn i {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            transition: var(--transition);
+        }
+
+        .service-btn:hover i {
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        .service-btn span {
+            font-weight: 600;
+            color: var(--dark-color);
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+
+        .service-details {
+            background: var(--light-color);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .service-details.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .service-details h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .service-details p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item i {
+            color: var(--accent-color);
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .feature-item h4 {
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+
+        .service-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .details-btn, .order-btn, .package-btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .details-btn {
+            background: var(--light-color);
+            color: var(--dark-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .order-btn, .package-btn {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .details-btn:hover {
+            background: #dde4e6;
+            transform: translateY(-2px);
+        }
+
+        .order-btn:hover, .package-btn:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        .packages-section {
+            padding: 50px 0;
+            background-color: #f5f5f5;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .package-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .package-card.featured {
+            transform: scale(1.05);
+            border: 2px solid var(--accent-color);
+        }
+
+        .package-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .package-price {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+
+        .package-features {
+            padding: 20px;
+        }
+
+        .package-features ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .package-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .package-features li:before {
+            content: "✓";
+            color: var(--accent-color);
+            margin-left: 10px;
+        }
+
+        .about-section {
+            padding: 50px 0;
+            background-color: white;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio {
+            padding: 50px 0;
+            background-color: #f5f5f5;
+        }
+
+        .portfolio-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        .tab-btn {
+            padding: 12px 25px;
+            background: white;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .tab-btn.active {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        .tab-btn:hover:not(.active) {
+            background: var(--light-color);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 250px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-item img, .portfolio-item iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio-placeholder {
+            text-align: center;
+            color: #777;
+            padding: 20px;
+        }
+
+        .portfolio-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .portfolio-item:hover .video-overlay {
+            opacity: 1;
+        }
+
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .play-btn:hover {
+            transform: scale(1.1);
+            background: #c0392b;
+        }
+
+        .contact-section {
+            padding: 50px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+            color: white;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-btn i {
+            margin-left: 10px;
+            font-size: 1.5rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-section {
+            padding: 50px 0;
+            background-color: var(--light-color);
+            text-align: center;
+        }
+
+        .social-section h3 {
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            font-size: 1.8rem;
+            transition: var(--transition);
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icon:hover {
+            transform: translateY(-8px);
+            background: var(--accent-color);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-icon span {
+            font-size: 0.7rem;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+
+        .youtube { background: #FF0000; }
+        .snapchat { background: #FFFC00; color: black; }
+        .facebook { background: #3b5998; }
+        .instagram { background: #E1306C; }
+        .linkedin { background: #0077B5; }
+        .twitter { background: #1DA1F2; }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            font-size: 1.3rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #777;
+        }
+
+        .close-btn:hover {
+            color: var(--secondary-color);
+        }
+
+        .modal-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .modal-description {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .modal-features {
+            margin-bottom: 25px;
+        }
+
+        .modal-features h4 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .modal-features ul {
+            list-style-type: disc;
+            margin-right: 20px;
+        }
+
+        .modal-features li {
+            margin-bottom: 8px;
+        }
+
+        .modal-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .order-form {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            background: #c0392b;
+        }
+
+        /* ستايلات إضافية للفيديوهات والأعمال */
+        .works-section {
+            padding: 50px 0;
+            background-color: white;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-title {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* ستايلات قسم من نحن المحدث */
+        .founders-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .founder-card {
+            text-align: center;
+            max-width: 250px;
+        }
+
+        .founder-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 4px solid var(--accent-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .founder-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .founder-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .founder-title {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header-top {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            
+            .logo h1 {
+                margin: 15px 0 0;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .service-actions {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .details-btn, .order-btn {
+                width: 100%;
+            }
+            
+            .modal-actions {
+                flex-direction: column;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+                font-size: 1.6rem;
+            }
+            
+            .services-row {
+                gap: 10px;
+            }
+            
+            .service-btn {
+                min-width: 120px;
+                padding: 15px 10px;
+            }
+            
+            .service-btn i {
+                font-size: 1.8rem;
+            }
+            
+            .service-btn span {
+                font-size: 0.8rem;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .social-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 1.6rem;
+            }
+            
+            /* تعديلات قسم الفيديو للأجهزة المحمولة */
+            .video-section {
+                padding: 30px 0;
+                margin: 30px 0;
+            }
+            
+            .video-container iframe {
+                height: 300px;
+            }
+
+            .founders-section {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-row {
+                gap: 8px;
+            }
+            
+            .service-btn {
+                min-width: 100px;
+                padding: 12px 8px;
+            }
+            
+            .service-btn i {
+                font-size: 1.6rem;
+            }
+            
+            .service-btn span {
+                font-size: 0.75rem;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-icons {
+                gap: 15px;
+            }
+            
+            .social-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.4rem;
+            }
+            
+            /* تعديلات قسم الفيديو للأجهزة الصغيرة */
+            .video-section {
+                padding: 20px 0;
+                margin: 20px 0;
+            }
+            
+            .video-container iframe {
+                height: 250px;
+            }
+
+            .founders-section {
+                gap: 20px;
+            }
+
+            .founder-card {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
-<body>
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-<div class="container">
-<a class="navbar-brand" data-page="home" href="#">آسر <span>وغزل</span></a>
-<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link active" data-page="home" href="#">الرئيسية</a></li>
-<li class="nav-item"><a class="nav-link" data-page="about" href="#">من نحن</a></li>
-<li class="nav-item"><a class="nav-link" data-page="services" href="#">خدماتنا</a></li>
-<li class="nav-item"><a class="nav-link" data-page="portfolio" href="#">أعمالنا</a></li>
-<li class="nav-item"><a class="nav-link" data-page="blog" href="#">المدونة</a></li>
-<li class="nav-item"><a class="nav-link" data-page="contact" href="#">اتصل بنا</a></li>
-<li class="nav-item"><a class="whatsapp-btn" href="https://wa.me/971509055350" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a></li>
-</ul>
-</div>
-</div>
-</nav>
-<!-- زر الاتصال العائم -->
-<div class="floating-contact">
-<a class="contact-btn" data-page="contact" href="#"><i class="fas fa-phone"></i></a>
-</div>
-<!-- زر الترس العائم - يفتح مودال تسجيل الدخول -->
-<div class="floating-admin">
-<a class="admin-btn" href="#" id="openAdminBtn" title="لوحة الإدارة"><i class="fas fa-cog"></i></a>
-</div>
-<!-- الصفحة الرئيسية -->
-<div class="page active" id="home">
-<!-- شريط الأخبار -->
-<div class="news-ticker">
-<div class="container">
-<span class="fw-bold"><i class="fas fa-bullhorn me-2"></i>أخبار:</span>
-<div class="ticker-content">عروض خاصة على باقات الحملات الإعلانية لهذا الشهر - خصم 20% على تصميم الهويات البصرية - ورشة عمل مجانية عن التسويق الرقمي يوم السبت - إطلاق حملة جديدة للعملاء الجدد</div>
-</div>
-</div>
-<!-- الهيرو الرئيسي -->
-<section class="hero-section">
-<div class="container">
-<h1 class="hero-title">إعلانات إبداعية. نتائج حقيقية.</h1>
-<p class="hero-subtitle">تصميم موقع  — تصوير — حملات اعلانية_انشاء فديوهات احترافية</p>
-<a class="btn btn-primary btn-lg" data-page="contact" href="#">اطلب حملتك الآن</a>
-<!-- ✨ يمكنك هنا استبدال الخلفية بفيديو -->
-</div>
-</section>
-<!-- وسائل التواصل -->
-<div class="container my-5">
-<div class="social-buttons">
-<a class="social-btn facebook" href="https://www.facebook.com/profile.php?id=61581086289092"><i class="fab fa-facebook-f"></i></a>
-<a class="social-btn instagram" href="https://www.instagram.com/ghkhmoas/"><i class="fab fa-instagram"></i></a>
-<a class="social-btn tiktok" href="https://www.tiktok.com/@ghkhmoas"><i class="fab fa-tiktok"></i></a>
-<a class="social-btn youtube" href="https://youtube.com/@mostafaabdo-o4g?si=iA1iLK5mS9jSgzHj"><i class="fab fa-youtube"></i></a>
-<a class="social-btn snapchat" href="https://www.snapchat.com/@mostafaabdo7907"><i class="fab fa-snapchat-ghost"></i></a>
-<a class="social-btn linkedin" href="linkedin.com/in/mostafa-abdo-422335386"><i class="fab fa-linkedin-in"></i></a>
-</div>
-</div>
-<!-- لماذا تختارنا -->
-<section class="py-5">
-<div class="container">
-<h2 class="section-title">لماذا تختارنا؟</h2>
-<div class="row text-center">
-<div class="col-md-4 mb-5">
-<div class="circle-face"><img alt="خبرة" src="https://imgur.com/dRWfdNm.jpg"/></div>
-<h3>خبرة</h3><p>سنوات من الخبرة في مجال الدعاية والإعلان والتسويق الرقمي</p>
-</div>
-<div class="col-md-4 mb-5">
-<div class="circle-face"><img alt="إبداع" src="https://imgur.com/IZeS9EA.jpg"/></div>
-<h3>إبداع</h3><p>تصميمات إبداعية وجذابة تلفت انتباه عملائك المستهدفين</p>
-</div>
-<div class="col-md-4 mb-5">
-<div class="circle-face"><img alt="نتائج مضمونة" src="https://imgur.com/y8btBkW.jpg"/></div>
-<h3>نتائج مضمونة</h3><p>نضمن لك تحقيق أهدافك التسويقية وزيادة مبيعاتك</p>
-</div>
-</div>
-</div>
-</section>
-<!-- شريط الصور المتحرك -->
-<div class="image-scroll">
-<div class="scroll-container">
-<!-- صورة 1 -->
-<div class="scroll-item">
-<a href="#"><img alt="عمل 1" src="https://i.imgur.com/aqXvqRZ.jpg"/></a>
-</div>
-<!-- صورة 2 -->
-<div class="scroll-item">
-<a href="#"><img alt="عمل 2" src="https://imgur.com/4UhdW00.jpg"/></a>
-</div>
-<!-- صورة 3 -->
-<div class="scroll-item">
-<a href="#"><img alt="عمل 3" src="https://imgur.com/PyRBLOQ.jpg"/></a>
-</div>
-<!-- صورة 4 -->
-<div class="scroll-item">
-<a href="#"><img alt="عمل 4" src="https://imgur.com/Ek4gKM9.jpg"/></a>
-</div>
-<!-- صورة 5 -->
-<div class="scroll-item">
-<a href="#"><img alt="عمل 5" src="https://imgur.com/W654I0a.jpg"/></a>
-</div>
-<!-- صورة 6 -->
-<div class="scroll-item">
-<a href="#"><img alt="عمل 6" src="https://imgur.com/Xkp1SgX.jpg"/></a>
-</div>
-<!-- صورة 7 -->
-<div class="scroll-item">
-<a href="#"><img alt="عمل 7" src="https://imgur.com/tMgiCBP.jpg"/></a>
-</div>
-<!-- صورة 8 -->
-<div class="scroll-item">
-<a href="#"><img alt="عمل 8" src="https://imgur.com/GyU66kH.jpg"/></a>
-</div>
-</div>
-</div>
-<!-- خدماتنا -->
-<section class="py-5 bg-light">
-<div class="container">
-<h2 class="section-title">أعمالنا</h2>
-<p class="text-center mb-5">اطّلع على مجموعة من أبرز أعمالنا.</p>
-<div class="row">
-<!-- فيديو 1 -->
-<div class="col-md-4 mb-4">
-<div class="portfolio-item" data-bs-target="#videoModal" data-bs-toggle="modal" data-video="https://www.youtube.com/embed/nZfjHwSSuJI
-">
-<img alt="إعلان 1" src="https://imgur.com/y8btBkW.jpg">
-<div class="portfolio-overlay">
-<a class="btn btn-light">مشاهدة</a>
-</div>
-</img></div>
-<h4 class="mt-3">إعلان 1</h4>
-</div>
-<!-- فيديو 2 -->
-<div class="col-md-4 mb-4">
-<div class="portfolio-item" data-bs-target="#videoModal" data-bs-toggle="modal" data-video="https://www.youtube.com/embed/vUKmvb00R_I">
-<img alt="إعلان 2" src="https://imgur.com/IZeS9EA.jpg">
-<div class="portfolio-overlay">
-<a class="btn btn-light">مشاهدة</a>
-</div>
-</img></div>
-<h4 class="mt-3">إعلان 2</h4>
-</div>
-<!-- فيديو 3 -->
-<div class="col-md-4 mb-4">
-<div class="portfolio-item" data-bs-target="#videoModal" data-bs-toggle="modal" data-video="https://www.youtube.com/embed/3Zblk-pSVyg">
-<img alt="إعلان 3" src="https://imgur.com/dRWfdNm.jpg">
-<div class="portfolio-overlay">
-<a class="btn btn-light">مشاهدة</a>
-</div>
-</img></div>
-<h4 class="mt-3">إعلان 3</h4>
-</div>
-<!-- فيديو 4 -->
-<div class="col-md-6 mb-4">
-<div class="portfolio-item" data-bs-target="#videoModal" data-bs-toggle="modal" data-video="https://www.youtube.com/embed/ZDXo3YOkgdc">
-<img alt="إعلان 4" src="https://imgur.com/y8btBkW.jpg">
-<div class="portfolio-overlay">
-<a class="btn btn-light">مشاهدة</a>
-</div>
-</img></div>
-<h4 class="mt-3">إعلان 4</h4>
-</div>
-<!-- فيديو 5 -->
-<div class="col-md-6 mb-4">
-<div class="portfolio-item" data-bs-target="#videoModal" data-bs-toggle="modal" data-video="https://www.youtube.com/embed/Hzp0Uf_5XGw">
-<img alt="إعلان 5" src="https://imgur.com/IZeS9EA.jpg">
-<div class="portfolio-overlay">
-<a class="btn btn-light">مشاهدة</a>
-</div>
-</img></div>
-<h4 class="mt-3">إعلان 5</h4>
-</div>
-</div>
-</div>
-</section>
-<!-- Modal لعرض الفيديو -->
-<div class="modal fade" id="videoModal" tabindex="-1">
-<div class="modal-dialog modal-lg modal-dialog-centered">
-<div class="modal-content bg-dark">
-<div class="modal-body p-0">
-<div class="ratio ratio-16x9">
-<iframe allow="autoplay; encrypted-media" allowfullscreen="" id="videoFrame" src=""></iframe>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script>
-  const videoModal = document.getElementById('videoModal');
-  const videoFrame = document.getElementById('videoFrame');
+<body dir="rtl">
+    <!-- زر الواتساب الثابت -->
+    <a href="https://wa.me/971545216539" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-  videoModal.addEventListener('show.bs.modal', function (event) {
-    let button = event.relatedTarget.closest('.portfolio-item');
-    let videoUrl = button.getAttribute('data-video');
-    videoFrame.src = videoUrl + "?autoplay=1&rel=0&vq=hd1080";
-  });
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <div class="profile-circle">
+                        <!-- الصورة الجديدة -->
+                        <img src="https://i.imgur.com/y8btBkW.jpeg" alt="Asr & Ghazal">
+                    </div>
+                    <h1>Asr & Ghazal</h1>
+                </div>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('ar')">العربية</button>
+                    <button class="lang-btn" onclick="switchLanguage('en')">English</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  videoModal.addEventListener('hidden.bs.modal', function () {
-    videoFrame.src = "";
-  });
-</script>
-<!-- باقات (مقتضب) -->
-<section class="py-5">
-<div class="container">
-<h2 class="section-title">باقاتنا</h2>
-<div class="row">
-<div class="col-md-4 mb-4"><div class="card service-card"><div class="card-body text-center p-4"><h3>باقة البداية</h3><p class="text-primary fw-bold">مناسب للشركات الناشئة</p><div class="price mb-3">1,500 <span>درهم</span></div><a class="btn btn-outline-primary" data-page="contact" href="#">اطلب الآن</a></div></div></div>
-<div class="col-md-4 mb-4"><div class="card service-card"><div class="card-body text-center p-4"><div class="popular-badge">الأكثر طلباً</div><h3>باقة النمو</h3><p class="text-primary fw-bold">مناسب للشركات المتوسطة</p><div class="price mb-3">3,500 <span>درهم</span></div><a class="btn btn-primary" data-page="contact" href="#">اطلب الآن</a></div></div></div>
-<div class="col-md-4 mb-4"><div class="card service-card"><div class="card-body text-center p-4"><h3>باقة الاحترافية</h3><p class="text-primary fw-bold">مناسب للشركات الكبيرة</p><div class="price mb-3">7,000 <span>درهم</span></div><a class="btn btn-outline-primary" data-page="contact" href="#">اطلب الآن</a></div></div></div>
-</div>
-</div>
-</section>
-<!-- أعمالنا -->
-</div>
-<div class="text-center mt-4"><a class="btn btn-primary" href="#">عرض المزيد من الأعمال</a></div>
+    <!-- شريط العروض المتحرك -->
+    <div class="offers-bar">
+        <div class="offers-content">
+            <div class="offer-item" data-ar="خصم 20% على تصميم الشعارات هذا الأسبوع" data-en="20% discount on logo design this week"></div>
+            <div class="offer-item" data-ar="عروض خاصة على تصميم المواقع الإلكترونية" data-en="Special offers on website design"></div>
+            <div class="offer-item" data-ar="باقات متكاملة للإعلانات الممولة بأسعار تنافسية" data-en="Complete packages for sponsored ads at competitive prices"></div>
+            <div class="offer-item" data-ar="تصميم فيديوهات إعلانية احترافية بأسعار مميزة" data-en="Professional advertising video design at special prices"></div>
+        </div>
+    </div>
 
+    <!-- قسم الفيديو التلقائي - بدلاً من شريط الصور المتحرك -->
+    <div class="container">
+        <div class="video-section">
+            <div class="video-container">
+                <iframe 
+                    id="youtubeVideo"
+                    src="https://www.youtube.com/embed/U80w2Yn2RLk?autoplay=1&mute=1&loop=1&playlist=U80w2Yn2RLk&controls=0&modestbranding=1&rel=0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
 
-<!-- CTA -->
-<section class="cta-section" style="background:linear-gradient(to right, var(--primary-color), var(--secondary-color)); color:#fff; padding:60px 0; border-radius:20px; margin:60px 0;">
-<div class="container text-center">
-<h2 class="mb-4">جاهز تبدأ معانا؟</h2>
-<p class="lead mb-4">تواصل معنا الآن لبدء حملتك الإعلانية وتحقيق نتائج ملموسة لعملك</p>
-<a class="btn btn-light btn-lg" data-page="contact" href="#">تواصل الآن</a>
-</div>
-</section>
+    <!-- باقي المحتوى -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title" data-ar="خدماتنا" data-en="Our Services">خدماتنا</h2>
+            
+            <div class="services-row">
+                <div class="service-btn" onclick="showService('social-ads')">
+                    <i class="fas fa-ad"></i>
+                    <span data-ar="إعلانات ممولة" data-en="Sponsored Ads">إعلانات ممولة</span>
+                </div>
+                <div class="service-btn" onclick="showService('logo-design')">
+                    <i class="fas fa-palette"></i>
+                    <span data-ar="تصميم شعارات" data-en="Logo Design">تصميم شعارات</span>
+                </div>
+                <div class="service-btn" onclick="showService('web-design')">
+                    <i class="fas fa-laptop-code"></i>
+                    <span data-ar="تصميم مواقع" data-en="Web Design">تصميم مواقع</span>
+                </div>
+                <div class="service-btn" onclick="showService('accounting-systems')">
+                    <i class="fas fa-calculator"></i>
+                    <span data-ar="أنظمة حسابات" data-en="Accounting Systems">أنظمة حسابات</span>
+                </div>
+                <div class="service-btn" onclick="showService('sdr-videos')">
+                    <i class="fas fa-video"></i>
+                    <span data-ar="فيديوهات SDR" data-en="SDR Videos">فيديوهات SDR</span>
+                </div>
+                <div class="service-btn" onclick="showService('video-production')">
+                    <i class="fas fa-film"></i>
+                    <span data-ar="إنتاج فيديوهات" data-en="Video Production">إنتاج فيديوهات</span>
+                </div>
+                <div class="service-btn" onclick="showService('mobile-apps')">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span data-ar="تطبيقات موبايل" data-en="Mobile Apps">تطبيقات موبايل</span>
+                </div>
+            </div>
 
-<!-- صفحة من نحن -->
-<div class="page" id="about">
-<div class="container py-5">
-<h2 class="section-title">من نحن</h2>
-<div class="row">
-<div class="col-md-6">
-<div class="about-content">
-<p>نحن في آسر وغزل شركة متخصصة في تصميم الإعلانات وإدارة الحملات الرقمية.</p>
-<p>تأسست شركتنا عام 2018 ... نفذت أكثر من 500 مشروع ناجح.</p>
-</div>
-</div>
-<div class="col-md-6"><img alt="فريق آسر وغزل" class="img-fluid rounded" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"/></div>
-</div>
-</div>
-</div>
-<!-- صفحات اخرى (خدمات - portfolio - blog) تم اختصارها هنا لاطالة الرد -->
-<!-- صفحة اتصل بنا -->
-<div class="page" id="contact">
-<div class="container py-5">
-<h2 class="section-title">تواصل معنا</h2>
-<p class="text-center mb-5">جاهز تبدأ حملتك؟ تواصل معنا الآن عبر الهاتف أو واتساب</p>
-<div class="row">
-<div class="col-md-8">
-<div class="contact-form">
-<h4 class="mb-4">أرسل لنا رسالة</h4>
-<form action="https://formspree.io/f/movqrogy" method="POST">
-<div class="row">
-<div class="col-md-6"><input class="form-control" placeholder="الاسم بالكامل" required="" type="text"/></div>
-<div class="col-md-6"><input class="form-control" placeholder="اسم الشركة" type="text"/></div>
-</div>
-<div class="row mt-3">
-<div class="col-md-6"><input class="form-control" placeholder="البريد الإلكتروني" required="" type="email"/></div>
-<div class="col-md-6"><input class="form-control" placeholder="رقم الهاتف" required="" type="tel"/></div>
-</div>
-<div class="row mt-3">
-<div class="col-md-6">
-<select class="form-control" required="">
-<option disabled="" selected="" value="">نوع المشروع</option>
-<option>تصميم إعلانات</option>
-<option>إنتاج فيديو</option>
-<option>حملة إعلانية</option>
-<option>تصميم موقع</option>
-<option>تصوير</option>
-<option>أخرى</option>
-</select>
-</div>
-<div class="col-md-6">
-<select class="form-control" required="">
-<option disabled="" selected="" value="">الميزانية المتوقعة</option>
-<option>أقل من 1000 درهم</option>
-<option>1000 - 3000 درهم</option>
-<option>3000 - 5000 درهم</option>
-<option>5000 - 10000 درهم</option>
-<option>أكثر من 10000 درهم</option>
-</select>
-</div>
-</div>
-<textarea class="form-control mt-3" placeholder="الرسالة" required="" rows="5"></textarea>
-<button class="btn btn-primary btn-lg w-100 mt-3" type="submit">إرسال الرسالة</button>
-</form>
-</div>
-</div>
-<div class="col-md-4">
-<div class="contact-info">
-<h4 class="mb-4">معلومات التواصل</h4>
-<p><i class="fas fa-phone"></i> 971509055350</p>
-<p><i class="fas fa-phone"></i> 971551855746</p>
-<p><i class="fas fa-envelope"></i> hello@aserandghazal.com</p>
-<div class="social-icons mt-4">
-<a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-<a href="#"><i class="fab fa-tiktok fa-2x"></i></a>
-<a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-</div>
-<a class="whatsapp-btn mt-4 d-inline-block" href="https://wa.me/971509055350" target="_blank"><i class="fab fa-whatsapp"></i> تواصل عبر واتساب</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- صفحة الادارة (مخفية حتى تسجيل الدخول) -->
-<div class="page" id="adminPanel" style="display:none;">
-<div class="container py-5">
-<h2 class="section-title">لوحة الإدارة</h2>
-<div class="admin-panel">
-<p class="hint">القائمة تُحفظ محلياً على هذا المتصفح (LocalStorage). للحماية الحقيقية استخدم سيرفر.</p>
-<div class="table-responsive">
-<table class="table table-bordered table-striped text-center">
-<thead class="table-dark">
-<tr><th>الاسم</th><th>الشركة</th><th>البريد</th><th>الهاتف</th><th>نوع المشروع</th><th>الميزانية</th><th>الرسالة</th><th>الإجراءات</th></tr>
-</thead>
-<tbody id="clientsTableBody"></tbody>
-</table>
-</div>
-<div class="mt-3">
-<button class="btn btn-danger" id="clearAllBtn">مسح الكل</button>
-<button class="btn btn-secondary" id="logoutBtn">تسجيل خروج</button>
-</div>
-</div>
-</div>
-</div>
-<!-- Login Modal -->
-<div aria-hidden="true" class="modal fade" id="loginModal" tabindex="-1">
-<div class="modal-dialog modal-dialog-centered">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title">دخول لوحة الإدارة</h5>
-<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-</div>
-<div class="modal-body">
-<form id="loginForm">
-<div class="mb-3">
-<label class="form-label">كلمة السر</label>
-<input class="form-control" id="loginPassword" required="" type="password"/>
-</div>
-<div class="mb-3 text-muted">ملاحظة: هذا تحقق من جهة العميل — غير آمن إذا تم نشر الكود. للامان الكامل استخدم سيرفر.</div>
-<button class="btn btn-primary w-100" type="submit">دخول</button>
-</form>
-</div>
-</div>
-</div>
-</div>
-<footer>
-<div class="container">
-<div class="row">
-<div class="col-md-4 mb-4"><h4>آسر وغزل</h4><p>شركة متخصصة في تصميم الإعلانات وإدارة الحملات الرقمية.</p></div>
-<div class="col-md-2 mb-4"><h5>روابط سريعة</h5><div class="footer-links"><a data-page="home" href="#">الرئيسية</a><a data-page="about" href="#">من نحن</a><a data-page="services" href="#">خدماتنا</a></div></div>
-<div class="col-md-3 mb-4"><h5>خدماتنا</h5><div class="footer-links"><a data-page="services" href="#">تصميم الإعلانات</a><a data-page="services" href="#">إنتاج الفيديو</a></div></div>
-<div class="col-md-3 mb-4"><h5>تواصل معنا</h5><div class="contact-info"><p><i class="fas fa-phone"></i> +971 50 905 5350</p><p><i class="fas fa-envelope"></i> hello@aserandghazal.com</p></div></div>
-</div>
-<hr/>
-<p class="text-center">© 2025 آسر وغزل. جميع الحقوق محفوظة.</p>
-</div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // لما اضغط على زر الترس يفتح مودال تسجيل الدخول
-  document.getElementById("openAdminBtn").addEventListener("click", function (e) {
-    e.preventDefault();
-    var loginModal = new bootstrap.Modal(document.getElementById("loginModal"));
-    loginModal.show();
-  });
+            <div id="service-details" class="service-details">
+                <!-- سيتم ملء المحتوى هنا ديناميكياً -->
+            </div>
+        </div>
+    </section>
 
-  // التحقق من كلمة المرور
-  document.getElementById("loginForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    const password = document.getElementById("loginPassword").value;
-    if(password === "332004"){ // 🔑 غيرها بالرقم السري اللي تحبه
-      document.getElementById("home").style.display = "none";
-      document.getElementById("about").style.display = "none";
-      document.getElementById("contact").style.display = "none";
-      document.getElementById("adminPanel").style.display = "block";
+    <!-- قسم الأعمال والفيديوهات -->
+    <section class="works-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="أعمالنا" data-en="Our Works">أعمالنا</h2>
+            
+            <div class="video-grid">
+                <!-- فيديو 1 -->
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/nZfjHwSSuJI" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-title">إعلان 1</div>
+                </div>
+                
+                <!-- فيديو 2 -->
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/vUKmvb00R_I" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-title">إعلان 2</div>
+                </div>
+                
+                <!-- فيديو 3 -->
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/3Zblk-pSVyg" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-title">إعلان 3</div>
+                </div>
+                
+                <!-- فيديو 4 -->
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/ZDXo3YOkgdc" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-title">إعلان 4</div>
+                </div>
+                
+                <!-- فيديو 5 -->
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Hzp0Uf_5XGw" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-title">إعلان 5</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      bootstrap.Modal.getInstance(document.getElementById("loginModal")).hide();
-    } else {
-      alert("كلمة المرور غير صحيحة ❌");
-    }
-  });
+    <!-- قسم الباقات -->
+    <section class="packages-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="باقاتنا" data-en="Our Packages">باقاتنا</h2>
+            
+            <div class="packages-grid">
+                <!-- باقة البداية -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 data-ar="باقة البداية" data-en="Starter Package">باقة البداية</h3>
+                        <p data-ar="مناسب للشركات الناشئة" data-en="Suitable for startups">مناسب للشركات الناشئة</p>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-price">1,500 <span data-ar="درهم" data-en="AED">درهم</span></div>
+                        <ul>
+                            <li data-ar="تصميم شعار احترافي" data-en="Professional logo design">تصميم شعار احترافي</li>
+                            <li data-ar="5 تصميمات إعلانية" data-en="5 ad designs">5 تصميمات إعلانية</li>
+                            <li data-ar="إعداد صفحة فيسبوك" data-en="Facebook page setup">إعداد صفحة فيسبوك</li>
+                            <li data-ar="دعم فني لمدة أسبوع" data-en="Technical support for one week">دعم فني لمدة أسبوع</li>
+                        </ul>
+                        <a href="https://wa.me/971545216539?text=مرحباً، أريد الاستفسار عن باقة البداية" class="package-btn" target="_blank" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</a>
+                    </div>
+                </div>
+                
+                <!-- باقة النمو -->
+                <div class="package-card featured">
+                    <div class="package-header">
+                        <h3 data-ar="باقة النمو" data-en="Growth Package">باقة النمو</h3>
+                        <p data-ar="مناسب للشركات المتوسطة" data-en="Suitable for medium businesses">مناسب للشركات المتوسطة</p>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-price">3,500 <span data-ar="درهم" data-en="AED">درهم</span></div>
+                        <ul>
+                            <li data-ar="هوية بصرية متكاملة" data-en="Complete visual identity">هوية بصرية متكاملة</li>
+                            <li data-ar="15 تصميم إعلاني" data-en="15 ad designs">15 تصميم إعلاني</li>
+                            <li data-ar="فيديو إعلاني واحد" data-en="One advertising video">فيديو إعلاني واحد</li>
+                            <li data-ar="حملة إعلانية لمدة شهر" data-en="One-month advertising campaign">حملة إعلانية لمدة شهر</li>
+                            <li data-ar="دعم فني لمدة شهر" data-en="Technical support for one month">دعم فني لمدة شهر</li>
+                        </ul>
+                        <a href="https://wa.me/971545216539?text=مرحباً، أريد الاستفسار عن باقة النمو" class="package-btn" target="_blank" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</a>
+                    </div>
+                </div>
+                
+                <!-- باقة الاحترافية -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 data-ar="باقة الاحترافية" data-en="Professional Package">باقة الاحترافية</h3>
+                        <p data-ar="مناسب للشركات الكبيرة" data-en="Suitable for large companies">مناسب للشركات الكبيرة</p>
+                    </div>
+                    <div class="package-features">
+                        <div class="package-price">7,000 <span data-ar="درهم" data-en="AED">درهم</span></div>
+                        <ul>
+                            <li data-ar="هوية بصرية متكاملة" data-en="Complete visual identity">هوية بصرية متكاملة</li>
+                            <li data-ar="30 تصميم إعلاني" data-en="30 ad designs">30 تصميم إعلاني</li>
+                            <li data-ar="3 فيديوهات إعلانية" data-en="3 advertising videos">3 فيديوهات إعلانية</li>
+                            <li data-ar="حملة إعلانية لمدة 3 أشهر" data-en="3-month advertising campaign">حملة إعلانية لمدة 3 أشهر</li>
+                            <li data-ar="تصميم موقع إلكتروني" data-en="Website design">تصميم موقع إلكتروني</li>
+                            <li data-ar="دعم فني لمدة 3 أشهر" data-en="Technical support for 3 months">دعم فني لمدة 3 أشهر</li>
+                        </ul>
+                        <a href="https://wa.me/971545216539?text=مرحباً، أريد الاستفسار عن باقة الاحترافية" class="package-btn" target="_blank" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  // زر تسجيل الخروج
-  document.getElementById("logoutBtn").addEventListener("click", function(){
-    document.getElementById("adminPanel").style.display = "none";
-    document.getElementById("home").style.display = "block";
-  });
-</script>
+    <!-- قسم من نحن - النسخة المحدثة -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="من نحن" data-en="About Us">من نحن</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-ar="نحن في آسر وغزل شركة متخصصة في تصميم الإعلانات وإدارة الحملات الرقمية." data-en="We at Asr & Ghazal are a company specialized in advertising design and digital campaign management.">
+                        نحن في آسر وغزل شركة متخصصة في تصميم الإعلانات وإدارة الحملات الرقمية.
+                    </p>
+                    <p data-ar="تأسست شركتنا عام 2018 ... نفذت أكثر من 500 مشروع ناجح." data-en="Our company was established in 2018 ... executed more than 500 successful projects.">
+                        تأسست شركتنا عام 2018 ... نفذت أكثر من 500 مشروع ناجح.
+                    </p>
+                    <p data-ar="تأسست الشركة تحت إدارة المهندس مصطفى أبو آسر والمهندس خالد أبو غزل، وتمكنا من بناء سمعة مميزة في مجال الدعاية والإعلان." data-en="The company was founded under the management of Engineer Mostafa Abu Asr and Engineer Khaled Abu Ghazal, and we have managed to build a distinguished reputation in the field of advertising.">
+                        تأسست الشركة تحت إدارة المهندس مصطفى أبو آسر والمهندس خالد أبو غزل، وتمكنا من بناء سمعة مميزة في مجال الدعاية والإعلان.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="فريق آسر وغزل">
+                </div>
+            </div>
+
+            <!-- قسم المؤسسين -->
+            <div class="founders-section">
+                <div class="founder-card">
+                    <div class="founder-image">
+                        <img src="https://i.imgur.com/xFH6v8P.jpg" alt="المهندس مصطفى أبو آسر">
+                    </div>
+                    <div class="founder-name">المهندس مصطفى أبو آسر</div>
+                    <div class="founder-title">المدير التنفيذي</div>
+                    <p data-ar="خبير في التسويق الرقمي وتصميم الحملات الإعلانية" data-en="Expert in digital marketing and advertising campaign design">
+                        خبير في التسويق الرقمي وتصميم الحملات الإعلانية
+                    </p>
+                </div>
+
+                <div class="founder-card">
+                    <div class="founder-image">
+                        <img src="https://i.imgur.com/U8dJ6Oa.jpg" alt="المهندس خالد أبو غزل">
+                    </div>
+                    <div class="founder-name">المهندس خالد أبو غزل</div>
+                    <div class="founder-title">المدير التقني</div>
+                    <p data-ar="متخصص في تصميم المواقع وتطوير الأنظمة" data-en="Specialized in website design and system development">
+                        متخصص في تصميم المواقع وتطوير الأنظمة
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+            <p class="lead mb-4" data-ar="جاهز لبدء مشروعك؟ تواصل معنا الآن" data-en="Ready to start your project? Contact us now">جاهز لبدء مشروعك؟ تواصل معنا الآن</p>
+            <a href="https://wa.me/971545216539?text=مرحباً، أريد الاستفسار عن خدماتكم" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span data-ar="تواصل عبر واتساب" data-en="Contact via WhatsApp">تواصل عبر واتساب</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- قسم وسائل التواصل الاجتماعي -->
+    <section class="social-section">
+        <div class="container">
+            <h3 data-ar="تابعنا على وسائل التواصل الاجتماعي" data-en="Follow us on social media">تابعنا على وسائل التواصل الاجتماعي</h3>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61581086289092" class="social-icon facebook" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    <span data-ar="فيسبوك" data-en="Facebook">فيسبوك</span>
+                </a>
+                <a href="https://www.instagram.com/ghkhmoas/" class="social-icon instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span data-ar="إنستجرام" data-en="Instagram">إنستجرام</span>
+                </a>
+                <a href="https://www.tiktok.com/@ghkhmoas" class="social-icon tiktok" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                    <span data-ar="تيك توك" data-en="TikTok">تيك توك</span>
+                </a>
+                <a href="https://youtube.com/@mostafaabdo-o4g?si=iA1iLK5mS9jSgzHj" class="social-icon youtube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    <span data-ar="يوتيوب" data-en="YouTube">يوتيوب</span>
+                </a>
+                <a href="https://www.snapchat.com/@mostafaabdo7907" class="social-icon snapchat" target="_blank">
+                    <i class="fab fa-snapchat-ghost"></i>
+                    <span data-ar="سناب شات" data-en="Snapchat">سناب شات</span>
+                </a>
+                <a href="linkedin.com/in/mostafa-abdo-422335386" class="social-icon linkedin" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span data-ar="لينكدإن" data-en="LinkedIn">لينكدإن</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-ar="آسر وغزل" data-en="Asr & Ghazal">آسر وغزل</h3>
+                    <p data-ar="شركة متخصصة في تصميم الإعلانات وإدارة الحملات الرقمية." data-en="A company specialized in advertising design and digital campaign management.">
+                        شركة متخصصة في تصميم الإعلانات وإدارة الحملات الرقمية.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="#" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                        <li><a href="#" data-ar="خدماتنا" data-en="Our Services">خدماتنا</a></li>
+                        <li><a href="#" data-ar="أعمالنا" data-en="Our Works">أعمالنا</a></li>
+                        <li><a href="#" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-ar="خدماتنا" data-en="Our Services">خدماتنا</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-ar="تصميم الإعلانات" data-en="Ad Design">تصميم الإعلانات</a></li>
+                        <li><a href="#" data-ar="إنتاج الفيديو" data-en="Video Production">إنتاج الفيديو</a></li>
+                        <li><a href="#" data-ar="تصميم المواقع" data-en="Website Design">تصميم المواقع</a></li>
+                        <li><a href="#" data-ar="الحملات الإعلانية" data-en="Advertising Campaigns">الحملات الإعلانية</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h3>
+                    <p><i class="fas fa-phone"></i> 971545216539</p>
+                    <p><i class="fas fa-phone"></i> 971509055350</p>
+                    <p><i class="fas fa-envelope"></i> mostafa332004a@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 <span data-ar="آسر وغزل. جميع الحقوق محفوظة." data-en="Asr & Ghazal. All rights reserved.">آسر وغزل. جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- باقي أقسام الموقع -->
+    <script>
+        // بيانات الخدمات
+        const servicesData = {
+            'social-ads': {
+                title: {
+                    ar: 'الإعلانات الممولة على التواصل الاجتماعي',
+                    en: 'Sponsored Ads on Social Media'
+                },
+                description: {
+                    ar: 'نقدم خدمات إعلانية متكاملة على منصات التواصل الاجتماعي مثل فيسبوك، إنستجرام، تويتر، وغيرها. نضمن لك وصول إعلاناتك للجمهور المستهدف وتحقيق أعلى عائد استثمار.',
+                    en: 'We provide integrated advertising services on social media platforms such as Facebook, Instagram, Twitter, and more. We ensure your ads reach the target audience and achieve the highest return on investment.'
+                },
+                features: {
+                    ar: [
+                        'تحليل السوق والمنافسين',
+                        'تحديد الجمهور المستهدف بدقة',
+                        'تصميم إعلانات جذابة وفعالة',
+                        'إدارة الحملات الإعلانية بشكل احترافي',
+                        'تتبع وتحليل أداء الحملات',
+                        'تعديل الاستراتيجية بناءً على النتائج'
+                    ],
+                    en: [
+                        'Market and competitor analysis',
+                        'Precise targeting of the audience',
+                        'Design of attractive and effective ads',
+                        'Professional management of advertising campaigns',
+                        'Tracking and analysis of campaign performance',
+                        'Strategy adjustment based on results'
+                    ]
+                }
+            },
+            'logo-design': {
+                title: {
+                    ar: 'تصميم شعارات ووجهات وصور احترافية',
+                    en: 'Design of Logos, Interfaces and Professional Images'
+                },
+                description: {
+                    ar: 'نصمم شعارات فريدة تعبر عن هوية علامتك التجارية، بالإضافة إلى تصميم وجهات متاجر وصور احترافية تجذب انتباه العملاء وتعزز صورتك في السوق.',
+                    en: 'We design unique logos that express your brand identity, in addition to designing storefronts and professional images that attract customers\' attention and enhance your image in the market.'
+                },
+                features: {
+                    ar: [
+                        'دراسة الهوية البصرية للعلامة التجارية',
+                        'تصميم شعار فريد ومعبر',
+                        'تطوير دليل استخدام الشعار',
+                        'تصميم مواد تسويقية متناسقة',
+                        'تصميم وجهات محلات ومتاجر',
+                        'تصوير منتجات احترافية'
+                    ],
+                    en: [
+                        'Study of the brand\'s visual identity',
+                        'Design of a unique and expressive logo',
+                        'Development of logo usage guide',
+                        'Design of coordinated marketing materials',
+                        'Design of storefronts and shops',
+                        'Professional product photography'
+                    ]
+                }
+            },
+            'web-design': {
+                title: {
+                    ar: 'تصميم المواقع الإلكترونية',
+                    en: 'Website Design'
+                },
+                description: {
+                    ar: 'نصمم مواقع إلكترونية متجاوبة وسريعة وجذابة تعمل على جميع الأجهزة. نضمن لك موقعاً يلبي احتياجات عملك ويعزز وجودك الرقمي على الإنترنت.',
+                    en: 'We design responsive, fast, and attractive websites that work on all devices. We ensure you get a website that meets your business needs and enhances your digital presence on the internet.'
+                },
+                features: {
+                    ar: [
+                        'تصميم متجاوب لجميع الأجهزة',
+                        'واجهة مستخدم سهلة وجذابة',
+                        'تحسين محركات البحث (SEO)',
+                        'تكامل مع وسائل التواصل الاجتماعي',
+                        'نظام إدارة محتوى سهل الاستخدام',
+                        'دعم فني متكامل'
+                    ],
+                    en: [
+                        'Responsive design for all devices',
+                        'Easy and attractive user interface',
+                        'Search engine optimization (SEO)',
+                        'Integration with social media',
+                        'Easy-to-use content management system',
+                        'Comprehensive technical support'
+                    ]
+                }
+            },
+            'accounting-systems': {
+                title: {
+                    ar: 'تصميم أنظمة الحسابات',
+                    en: 'Accounting Systems Design'
+                },
+                description: {
+                    ar: 'نطور أنظمة محاسبية متكاملة تلبي احتياجات عملك، سواء كنت تاجراً صغيراً أو مؤسسة كبيرة. نضمن لك نظاماً آمناً وسهلاً في الاستخدام.',
+                    en: 'We develop integrated accounting systems that meet your business needs, whether you are a small trader or a large institution. We ensure you get a secure and easy-to-use system.'
+                },
+                features: {
+                    ar: [
+                        'نظام محاسبي متكامل',
+                        'تقارير مالية مفصلة',
+                        'إدارة الفواتير والمستحقات',
+                        'متابعة المخزون والمبيعات',
+                        'حماية وأمان للبيانات',
+                        'تدريب ودعم فني'
+                    ],
+                    en: [
+                        'Integrated accounting system',
+                        'Detailed financial reports',
+                        'Invoice and receivable management',
+                        'Inventory and sales tracking',
+                        'Data protection and security',
+                        'Training and technical support'
+                    ]
+                }
+            },
+            'sdr-videos': {
+                title: {
+                    ar: 'تصميم فيديوهات SDR',
+                    en: 'SDR Video Design'
+                },
+                description: {
+                    ar: 'ننتج فيديوهات إعلانية قصيرة ومؤثرة باستخدام تقنية SDR التي تضمن جودة عالية وتأثيراً بصرياً مذهلاً يجذب انتباه المشاهدين ويعزز حملاتك التسويقية.',
+                    en: 'We produce short and impactful advertising videos using SDR technology that ensures high quality and stunning visual effects that attract viewers\' attention and enhance your marketing campaigns.'
+                },
+                features: {
+                    ar: [
+                        'جودة بصرية عالية الدقة',
+                        'مؤثرات بصرية جذابة',
+                        'تسجيل صوتي احترافي',
+                        'مونتاج وإخراج إبداعي',
+                        'تحسين للسيو',
+                        'توزيع على المنصات المناسبة'
+                    ],
+                    en: [
+                        'High definition visual quality',
+                        'Attractive visual effects',
+                        'Professional audio recording',
+                        'Creative editing and directing',
+                        'SEO optimization',
+                        'Distribution on appropriate platforms'
+                    ]
+                }
+            },
+            'video-production': {
+                title: {
+                    ar: 'إنتاج الفيديوهات',
+                    en: 'Video Production'
+                },
+                description: {
+                    ar: 'نقدم خدمات إنتاج فيديوهات متكاملة تشمل التصوير، المونتاج، المؤثرات البصرية، وإضافة الرسوم المتحركة. فيديوهات احترافية تحكي قصة علامتك التجارية.',
+                    en: 'We provide integrated video production services including filming, editing, visual effects, and adding animations. Professional videos that tell your brand story.'
+                },
+                features: {
+                    ar: [
+                        'تصوير احترافي عالي الجودة',
+                        'مونتاج وإخراج إبداعي',
+                        'مؤثرات بصرية ورسوم متحركة',
+                        'تسجيل صوتي احترافي',
+                        'إضافة ترجمات ونصوص',
+                        'توزيع على المنصات المختلفة'
+                    ],
+                    en: [
+                        'Professional high-quality filming',
+                        'Creative editing and directing',
+                        'Visual effects and animations',
+                        'Professional audio recording',
+                        'Adding subtitles and texts',
+                        'Distribution on various platforms'
+                    ]
+                }
+            },
+            'mobile-apps': {
+                title: {
+                    ar: 'تصميم تطبيقات الموبايل',
+                    en: 'Mobile App Design'
+                },
+                description: {
+                    ar: 'نطور تطبيقات موبايل مبتكرة وسهلة الاستخدام لأنظمة iOS و Android. تطبيقات تلبي احتياجات مستخدميك وتعزز تفاعلهم مع علامتك التجارية.',
+                    en: 'We develop innovative and easy-to-use mobile applications for iOS and Android systems. Applications that meet your users\' needs and enhance their interaction with your brand.'
+                },
+                features: {
+                    ar: [
+                        'تصميم واجهة مستخدم جذابة',
+                        'تجربة مستخدم سلسة',
+                        'توافق مع iOS و Android',
+                        'تكامل مع الأنظمة الأخرى',
+                        'اختبار وضمان الجودة',
+                        'صيانة وتحديثات مستمرة'
+                    ],
+                    en: [
+                        'Attractive user interface design',
+                        'Smooth user experience',
+                        'Compatibility with iOS and Android',
+                        'Integration with other systems',
+                        'Testing and quality assurance',
+                        'Maintenance and continuous updates'
+                    ]
+                }
+            }
+        };
+
+        // متغير لتخزين الخدمة الحالية
+        let currentService = '';
+
+        // عرض تفاصيل الخدمة
+        function showService(serviceId) {
+            const service = servicesData[serviceId];
+            const lang = document.documentElement.lang;
+            const detailsContainer = document.getElementById('service-details');
+            
+            // إضافة فئة active لعرض التفاصيل
+            detailsContainer.classList.add('active');
+            
+            // بناء محتوى التفاصيل
+            detailsContainer.innerHTML = `
+                <h3>${service.title[lang]}</h3>
+                <p>${service.description[lang]}</p>
+                
+                <div class="service-features">
+                    ${service.features[lang].map(feature => `
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>${feature}</h4>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <div class="service-actions">
+                    <button class="details-btn" onclick="closeServiceDetails()" data-ar="إغلاق" data-en="Close">إغلاق</button>
+                    <a href="https://wa.me/971545216539?text=مرحباً، أريد الاستفسار عن خدمة ${service.title[lang]}" class="order-btn" target="_blank" data-ar="اطلب الخدمة" data-en="Order Service">اطلب الخدمة</a>
+                </div>
+            `;
+            
+            // تحديث النصوص بناءً على اللغة
+            updateTexts(lang);
+        }
+
+        // إغلاق تفاصيل الخدمة
+        function closeServiceDetails() {
+            document.getElementById('service-details').classList.remove('active');
+        }
+
+        // تبديل اللغة
+        function switchLanguage(lang) {
+            const arBtn = document.querySelector('.lang-btn:nth-child(1)');
+            const enBtn = document.querySelector('.lang-btn:nth-child(2)');
+            
+            if (lang === 'ar') {
+                document.documentElement.dir = 'rtl';
+                document.documentElement.lang = 'ar';
+                arBtn.classList.add('active');
+                enBtn.classList.remove('active');
+            } else {
+                document.documentElement.dir = 'ltr';
+                document.documentElement.lang = 'en';
+                enBtn.classList.add('active');
+                arBtn.classList.remove('active');
+            }
+            
+            // تحديث جميع النصوص
+            updateTexts(lang);
+        }
+
+        // تحديث النصوص بناءً على اللغة
+        function updateTexts(lang) {
+            const elements = document.querySelectorAll('[data-ar]');
+            
+            elements.forEach(element => {
+                if (lang === 'ar') {
+                    if (element.tagName === 'INPUT' || element.tagName === 'BUTTON' || element.tagName === 'A') {
+                        element.textContent = element.getAttribute('data-ar');
+                    } else {
+                        element.textContent = element.getAttribute('data-ar');
+                    }
+                } else {
+                    if (element.tagName === 'INPUT' || element.tagName === 'BUTTON' || element.tagName === 'A') {
+                        element.textContent = element.getAttribute('data-en');
+                    } else {
+                        element.textContent = element.getAttribute('data-en');
+                    }
+                }
+            });
+        }
+
+        // تهيئة الموقع عند التحميل
+        document.addEventListener('DOMContentLoaded', function() {
+            // تعيين اللغة الافتراضية
+            switchLanguage('ar');
+        });
+    </script>
 </body>
 </html>
